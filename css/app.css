@@ -1,66 +1,121 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+/*  NAV BAR */
+.header {
+  padding: 18.5rem 0;
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url("field.jpg") center center no-repeat;
+  background-size: cover; }
+
+[data-sticky] {
+  width: 100%; }
+
+.top-bar {
+  background-color:#247BA0;
+  padding: 0rem;
+  transition: padding .25s ease; }
+
+.is-stuck .top-bar {
+  padding: 0rem;
+  transition: padding .25s ease; }
+
+.menu > li > a {
+      padding: 1rem 4rem;
+      letter-spacing: 3px;
+      color: #fff;
+      text-transform: uppercase;
+  }
+
+.top-bar ul {
+  background-color: #247BA0;
+}
+
+.top-bar h2 {
+  margin-bottom: 0;
+}
+
+i:hover {
+  color: #70C1B3;
+}
+
+.menu > li > a:hover {
+  color: #70C1B3;
+}
+body {
+  background: #70C1B3; }
+
+.project {
+  background: #B2DBBF;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+  font: bolder 0.875rem "Avenir Next";
+  letter-spacing: 5px;
+  color: #000;
+  font-size: 130%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+h2#brand {
+  color: #fff;
+  padding-left: 50px;
+}
+
+/* TEXT BOXES */
+  .head.panel {
+    margin: 3rem auto;
+    border: 2px solid #444;
+    background: #fff; }
+    .head.panel p {
+      font: 1rem "Avenir Next";
+      padding: 1rem 2rem 2rem 2rem;
+      margin-top: -1.25rem; }
+      .head.panel p span {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 75%;
+        font-weight: bold; }
+    .head.panel .sign {
+      background: #fff;
+      width: 60%;
+      height: 2.4rem;
+      border: 2px solid #444;
+      position: relative;
+      top: -2.5rem;
+      padding-bottom: 48px;
+      margin: auto; }
+      .head.panel .sign h1 {
+        text-transform: uppercase;
+        font: bolder 0.875rem "Avenir Next";
+        letter-spacing: 3px;
+        color: #666;
+        font-size: 70%;
+        text-align: center;
+        line-height: 3rem; }
+
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font: 1rem "Avenir Next";
   margin: 0;
 }
 
-body h1 {
-  font: bold, 70px;
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 3rem;
-  white-space: nowrap;
+.fa {
+  font-size: 20px;
+  color: black;
 }
 
-h2, h3
- {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.middle p,
-.end p {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-align: center;
-  line-height: 1.2;
-
-}
-
-@charset "UTF-8";
-.hero {
-  background:
-  linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  ),
-  url(field.jpg);
-  background-size: cover;
-  height: 100vh;
-  overflow: hidden;
- }
-  .hero h1 {
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    padding-top: 50%;
-    padding-left: 40%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
-
+/* FOOTER */
 .footer {
-  background-color: #D3D3D3;
+  background-color: #247BA0;
   text-align: center;
   font-size: 1.2rem;
   padding: 4rem; }
   .footer p.slogan {
-    color: #ffffff;
+    color: #000;
     font-size: 1.8rem;
     margin: 0 0 1rem; }
   .footer p.copywrite {
@@ -79,33 +134,3 @@ h2, h3
     .footer .links a:last-child::after {
       content: "";
       padding: 0 0.4rem 0 0.8rem; }
-
-
-.middle {
-    background-image: url(http://static.pacsun.com/gsom/img/bg-clouds-md.png);
-    padding-top: 10%;
-    padding-bottom: 4%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    position: relative;
-    margin-bottom: -2.2em;
-    z-index: 3;
-}
-
-.end {
-  background:
-  linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  ),
-  url(cover.jpg);
-  padding-top: 10%;
-  padding-bottom: 11%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  position: relative;
-  margin-bottom: -2.2em;
-  z-index: 3;
-}

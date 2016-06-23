@@ -8,66 +8,138 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
   </head>
+  <body>
+    <header id="header" class="header"></header>
 
-  <header class="hero">
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>RED PANDAS</h1>
+    <div data-sticky-container>
+      <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="footer:bottom">
+        <div class="top-bar">
+          <div class="top-bar-title">
+            <h2 id="brand">Stacy Zhao</h2>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
 
-  <body>
-    <section class="middle" style="background-image: url(http://static.pacsun.com/gsom/img/bg-clouds-md.png)">
+    <br />
+    <br />
+
+
+    <div class='column row'>
       <div class="row">
-        <div class="large-12 columns">
-          <h2> HI, I'M STACY :)</h2>
-          <p> The red panda is dwarfed by the black-and-white giant that shares its name.
-            These pandas typically grow to the size of a house cat, though their big,
-            bushy tails add an additional 18 inches (46 centimeters). The
-            pandas use their ringed tails as wraparound blankets in the
-            chilly mountain heights.
-          </p>
+        <center><h2 id="about" data-magellan-target="about">About</h2></center>
+        <div class="small-12 large-4 large-offset-1 columns">
+          <div class="head panel">
+            <div class="sign">
+              <h1>Me</h1>
+            </div>
+            <p><span>There's more information about me?</span><br />In addition to their portability and minimal space requirements for storage, the Equalizer bars also simplify workouts by consolidating all exercises to a single machine that requires no weight stack adjustments or significant alterations between them. Each weighs 8 pounds, and the system has been tested to support up to 400 pounds of body weight.</p>
+          </div>
         </div>
-      </div>
-    </section>
 
-  <section class="end">
-    <div class="row">
-      <div class="large-12 columns">
-          <h3>Somewhere I belong...</h3>
-          <p>The red panda shares the giant panda's rainy, high-altitude
-            forest habitat, but has a wider range. Red pandas live in
-            the mountains of Nepal and northern Myanmar (Burma),
-            as well as in central China.</p>
-          <p>These animals spend most of their lives in trees and even sleep
-            aloft. When foraging, they are most active at night as well as in
-            the gloaming hours of dusk and dawn.</p>
-
+        <div class="small-12 large-5 large-offset-1 end columns">
+          <div class="head panel">
+            <div class="sign">
+              <h1>Skills</h1>
+            </div>
+            <p><span>What Awesome skills!</span> <br />
+              Python, JavaScript, Django, Git, GitHub, Heroku, jQuery, HTML, CSS, REST API, Pandas
+              <br />Scikit-learn, Jupyter Notebook, Numpy
+              <br />
+              <br />
+              <span>Want to know more?</span>
+            </p>
+          </div>
         </div>
-      </div>
-</section>
 
-    <footer class="footer">
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="row"><br />
+        <center><h2 id="projects" data-magellan-target="projects"> Projects</h2></center>
+        <div class="small-12 large-4 columns">
+          <div class="head panel">
+            <div class="sign">
+              <h1>Dashboard</h1>
+            </div>
+            <p><span>example</span><br />
+              Objective was to show real time information including graphs where managers can view it at a glance.
+              <br /><br /><span>Live Demo</span><br />
+              <span>Github</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="small-12 large-4 columns">
+          <div class="head panel">
+            <div class="sign">
+              <h1>Traffic Simulation</h1>
+            </div>
+            <p><span>What Awesome skills!</span> <br />
+              Python, JavaScript, Django, Git, GitHub, Heroku, jQuery, HTML, CSS, REST API, Pandas
+              <br />Scikit-learn, Jupyter Notebook, Numpy
+              <br />
+              <br />
+              <span>Live Demo</span><br />
+              <span>Github</span>
+            </p>
+
+          </div>
+        </div>
+        <div class="small-12 large-4 columns">
+          <div class="head panel">
+            <div class="sign">
+              <h1>Stack Overflow Clone</h1>
+            </div>
+            <p><span>What Awesome skills!</span> <br />
+              Python, JavaScript, Django, Git, GitHub, Heroku, jQuery, HTML, CSS, REST API, Pandas
+              <br />Scikit-learn, Jupyter Notebook, Numpy
+              <br />
+              <br />
+              <span>Live Demo</span><br />
+              <span>Github</span>
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer id="footer" class="footer">
       <div class="row">
-        <div class="small-12 columns">
-          <p class="slogan">Find me!</p>
-          <p class="links">
-            <i class="fa fa-github fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-slack fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-          </p>
-          <p class="copywrite">Copywrite not copypwrite © 2015</p>
+        <div class="large-5 small-centered columns">
+          <div class="head panel">
+            <div class="sign">
+              <h1 id="contact" data-magellan-target="contact">Contact me!</h1>
+            </div>
+              <p class="links">
+                <a href="https://github.com/stacyzhao"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                <a href="https://ca.linkedin.com/in/stacy-zhao-53968651"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                <a href="mailto:stacyczhao@gmail.com" target="_top"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+              </p>
+              <p>
+                416.464.3386
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
