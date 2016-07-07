@@ -2,65 +2,93 @@
 .header {
   padding: 18.5rem 0;
   background:
-      linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
-      ),
-      url("field.jpg") center center no-repeat;
-  background-size: cover; }
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("field.jpg") center center no-repeat;
+  background-size: cover;
+}
 
-.border-top {
-    top: 20px;
+/*#border-top {
+  top: 20px;
 }
-.border-left {
-    left: 20px;
+
+#border-left {
+  left: 20px;
 }
-.border-right {
-    right: 20px;
+
+#border-right {
+  right: 20px;
 }
-.border-bottom {
-    bottom: 20px;
+
+#border-bottom {
+  bottom: 20px;
 }
-.border-top, .border-bottom {
-    height: 24px;
-    left: 20px;
-    right: 20px;
+
+#border-top, #border-bottom {
+  height: 24px;
+  left: 20px;
+  right: 20px;
 }
-.border-left, .border-right {
-    width: 24px;
-    top: 20px;
-    bottom: 20px;
+
+#border-left, #border-right {
+  width: 24px;
+  top: 20px;
+  bottom: 20px;
 }
-.border-top, .border-bottom, .border-left, .border-right {
-    position: absolute;
-    background: #247BA0;
+
+#border-top, #border-bottom, #border-left, #border-right {
+  position: fixed;
+  background: #247BA0;
 }
-/*.border-bottom{
-  position: absolute;
+
+#border-bottom{
+  position: fixed;
   background: transparent;
   z-index: 10;
-
 }*/
 
+#border-top, #border-bottom, #border-left, #border-right {
+	background: #247BA0;
+	position: absolute;
+	}
+	#border-left, #border-right {
+		top: 20px; bottom: 0px;
+		width: 24px;
+		}
+		#border-left { left: 20px; }
+		#border-right { right: 20px; }
+
+	#border-top, #border-bottom {
+		left: 20px; right: 20px;
+		height: 24px;
+		}
+		#border-top { top: 20px; }
+		#border-bottom { bottom: 0px; height: 45px;}
+
 [data-sticky] {
-  width: 100%; }
+  width: 100%;
+}
 
 .top-bar {
   background-color:#247BA0;
   padding: 0rem;
   margin: 0 20px;
-  transition: padding .25s ease; }
+  transition: padding .25s ease;
+}
 
 .is-stuck .top-bar {
   padding: 0rem;
-  transition: padding .25s ease; }
+  transition: padding .25s ease;
+}
 
 .menu > li > a {
       padding: 1rem 4rem;
       letter-spacing: 3px;
       color: #fff;
       text-transform: uppercase;
-  }
+}
 
 .top-bar ul {
   background-color: #247BA0;
@@ -77,8 +105,10 @@ i:hover {
 .menu > li > a:hover {
   color: #70C1B3;
 }
+
 body {
-  background: #70C1B3; }
+  background: #70C1B3;
+}
 
 .project {
   background: #B2DBBF;
