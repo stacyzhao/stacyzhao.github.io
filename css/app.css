@@ -1,55 +1,20 @@
 /*  NAV BAR */
 .header {
-  padding: 18.5rem 0;
+  padding: 19.75rem 0;
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
     ),
     url("field.jpg") center center no-repeat;
   background-size: cover;
 }
 
-/*#border-top {
-  top: 20px;
+.wrap {
+  position: relative;
 }
 
-#border-left {
-  left: 20px;
-}
-
-#border-right {
-  right: 20px;
-}
-
-#border-bottom {
-  bottom: 20px;
-}
-
-#border-top, #border-bottom {
-  height: 24px;
-  left: 20px;
-  right: 20px;
-}
-
-#border-left, #border-right {
-  width: 24px;
-  top: 20px;
-  bottom: 20px;
-}
-
-#border-top, #border-bottom, #border-left, #border-right {
-  position: fixed;
-  background: #247BA0;
-}
-
-#border-bottom{
-  position: fixed;
-  background: transparent;
-  z-index: 10;
-}*/
-
-#border-top, #border-bottom, #border-left, #border-right {
+/*#border-top, #border-bottom, #border-left, #border-right {
 	background: #247BA0;
 	position: absolute;
 	}
@@ -65,16 +30,16 @@
 		height: 24px;
 		}
 		#border-top { top: 20px; }
-		#border-bottom { bottom: 0px; height: 45px;}
+		#border-bottom { bottom: 0px; height: 45px;}*/
 
 [data-sticky] {
   width: 100%;
 }
 
 .top-bar {
-  background-color:#247BA0;
+  background-color: #247BA0;
   padding: 0rem;
-  margin: 0 20px;
+  /*margin: 0 20px;*/
   transition: padding .25s ease;
 }
 
@@ -107,23 +72,64 @@ i:hover {
 }
 
 body {
-  background: #70C1B3;
+  background: #C2DFE3;
 }
 
 .project {
-  background: #B2DBBF;
+  background: #9DB4C0;
 }
 
-h2, h3 {
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1, h2, h3 {
   text-transform: uppercase;
   font: bolder 0.875rem "Avenir Next";
   letter-spacing: 5px;
   color: #000;
   font-size: 130%;
-  text-align: center;
+  text-align: right;
   line-height: 3rem;
 }
 
+.subtitle {
+  font-size: 30px;
+}
+.title {
+  text-align: center;
+  font-size: 36px;
+  padding-bottom: 20px;
+
+}
+.button {
+  text-transform: uppercase;
+  background: #247BA0;
+}
+p {
+  /*text-transform: uppercase;*/
+  padding-left: 27px;
+  font: 0.95rem "Avenir Next";
+}
+
+.cat{
+  text-transform: uppercase;
+  font: bolder 0.875rem "Avenir Next";
+}
 h2#brand {
   color: #fff;
   padding-left: 50px;
