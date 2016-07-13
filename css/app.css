@@ -37,7 +37,7 @@
 }
 
 .top-bar {
-  background-color: #247BA0;
+  background-color: #9DB4C0;
   padding: 0rem;
   /*margin: 0 20px;*/
   transition: padding .25s ease;
@@ -56,19 +56,15 @@
 }
 
 .top-bar ul {
-  background-color: #247BA0;
+  background-color: #9DB4C0;
 }
 
 .top-bar h2 {
   margin-bottom: 0;
 }
 
-i:hover {
-  color: #70C1B3;
-}
-
-.menu > li > a:hover {
-  color: #70C1B3;
+.menu > li > a:hover, i:hover, a:focus {
+  color: #1585cf;
 }
 
 body {
@@ -108,9 +104,11 @@ h1, h2, h3 {
   text-align: right;
   line-height: 3rem;
 }
-a{
+
+a {
   color:black;
 }
+
 .subtitle {
   font-size: 30px;
 }
@@ -120,14 +118,13 @@ a{
   padding-bottom: 20px;
 }
 
-.contact-title {
+.contact-title, .contact-info {
   color: black;
   text-align: center;
   font-size: 18px;
 }
-.contact-info{
-  color: black;
-  text-align: center;
+
+.contact-info {
   font-size: 16px;
   padding-bottom: 5px;
 }
@@ -136,16 +133,18 @@ a{
   text-transform: uppercase;
   background: #247BA0;
 }
+
 p {
   /*text-transform: uppercase;*/
   padding-left: 27px;
   font: 0.95rem "Avenir Next";
 }
 
-.cat{
+.cat {
   text-transform: uppercase;
   font: bolder 0.875rem "Avenir Next";
 }
+
 h2#brand {
   color: #fff;
   padding-left: 50px;
