@@ -49,10 +49,10 @@
 }
 
 .menu > li > a {
-      padding: 1rem 4rem;
-      letter-spacing: 3px;
-      color: #fff;
-      text-transform: uppercase;
+  padding: 1rem 4rem;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .top-bar ul {
@@ -74,9 +74,11 @@ body {
 .project {
   background: #9DB4C0;
 }
+
 .img:hover {
     opacity: 0.6;
 }
+
 span.text-content {
   background: rgba(0,0,0,0.5);
   color: white;
@@ -112,6 +114,7 @@ a {
 .subtitle {
   font-size: 30px;
 }
+
 .title {
   text-align: center;
   font-size: 36px;
