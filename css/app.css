@@ -1,220 +1,135 @@
-/*  NAV BAR */
-.header {
-  padding: 19.75rem 0;
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url("field.jpg") center center no-repeat;
+html {
+  background color: #FFF no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
-.wrap {
-  position: relative;
-}
-
-/*#border-top, #border-bottom, #border-left, #border-right {
-	background: #247BA0;
-	position: absolute;
-	}
-	#border-left, #border-right {
-		top: 20px; bottom: 0px;
-		width: 24px;
-		}
-		#border-left { left: 20px; }
-		#border-right { right: 20px; }
-
-	#border-top, #border-bottom {
-		left: 20px; right: 20px;
-		height: 24px;
-		}
-		#border-top { top: 20px; }
-		#border-bottom { bottom: 0px; height: 45px;}*/
-
-[data-sticky] {
+.header {
+  text-align: center;
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
   width: 100%;
 }
 
-.top-bar {
-  background-color: #9DB4C0;
-  padding: 0rem;
-  /*margin: 0 20px;*/
-  transition: padding .25s ease;
-}
-
-.is-stuck .top-bar {
-  padding: 0rem;
-  transition: padding .25s ease;
-}
-
-.menu > li > a {
-  padding: 1rem 4rem;
-  letter-spacing: 3px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.top-bar ul {
-  background-color: #9DB4C0;
-}
-
-.top-bar h2 {
-  margin-bottom: 0;
-}
-
-.menu > li > a:hover, i:hover, a:focus {
-  color: #1585cf;
-}
-
-body {
-  background: #C2DFE3;
-}
-
-.project {
-  background: #9DB4C0;
-}
-
-.img:hover {
-    opacity: 0.6;
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-}
-
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-h1, h2, h3 {
-  text-transform: uppercase;
-  font: bolder 0.875rem "Avenir Next";
-  letter-spacing: 5px;
-  color: #000;
-  font-size: 130%;
-  text-align: right;
-  line-height: 3rem;
-}
-
-a {
-  color:black;
-}
-
-.subtitle {
-  font-size: 30px;
-}
-
 .title {
-  text-align: center;
-  font-size: 36px;
-  padding-bottom: 20px;
-}
-
-.contact-title, .contact-info {
-  color: black;
-  text-align: center;
-  font-size: 18px;
-}
-
-.contact-info {
-  font-size: 16px;
-  padding-bottom: 5px;
-}
-
-.button {
-  text-transform: uppercase;
-  background: #247BA0;
-}
-
-p {
+  font: 70px 'Amatic SC', cursive;;
   /*text-transform: uppercase;*/
-  padding-left: 27px;
-  font: 0.95rem "Avenir Next";
+  letter-spacing: 6px;
+  text-align: center;
 }
 
+.space {
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.nav li {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  list-style-type: none
+  margin-left: 30px;
+  margin-right: 30px;
+  font: 20px "Avenir Next", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+li {
+  font: 16px "Avenir Next", sans-serif;
+  -webkit-padding-start: 0;
+  list-style: none;
+  list-style-type: none
+}
+
+.about, .projects {
+  padding-top: 400px;
+  margin: 280px 0;
+}
+
+.skill-title {
+  font: 30px "Avenir Next";
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+.project-title {
+  font: 25px "Avenir Next";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.paragraph-text {
+  margin: 30px 0 30px 0;
+  font: 16px "Avenir Next", sans-serif;
+  line-height: 150%;
+}
+.button {
+  font: 14px "Avenir Next", sans-serif;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button.hollow {
+  text-decoration: none;
+  border: 1px solid #58A4B0;
+  color: #000;
+}
 .cat {
   text-transform: uppercase;
   font: bolder 0.875rem "Avenir Next";
 }
 
-h2#brand {
-  color: #fff;
-  padding-left: 50px;
+li > a {
+  position: relative;
+  color: #58A4B0;
+  text-decoration: none;
 }
 
-/* TEXT BOXES */
-  .head.panel {
-    margin: 3rem auto;
-    border: 2px solid #444;
-    background: #fff; }
-    .head.panel p {
-      font: 1rem "Avenir Next";
-      padding: 1rem 2rem 2rem 2rem;
-      margin-top: -1.25rem; }
-      .head.panel p span {
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 75%;
-        font-weight: bold; }
-    .head.panel .sign {
-      background: #fff;
-      width: 60%;
-      height: 2.4rem;
-      border: 2px solid #444;
-      position: relative;
-      top: -2.5rem;
-      padding-bottom: 48px;
-      margin: auto; }
-      .head.panel .sign h1 {
-        text-transform: uppercase;
-        font: bolder 0.875rem "Avenir Next";
-        letter-spacing: 3px;
-        color: #666;
-        font-size: 70%;
-        text-align: center;
-        line-height: 3rem; }
+li > a:hover {
+  color: #58A4B0;
+}
 
-body {
+li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.contact-info {
+  font-size: 16px;
+  padding-bottom: 5px;
   font: 1rem "Avenir Next";
-  margin: 0;
-}
-
-.fa {
-  font-size: 20px;
-  color: black;
-}
-
-
-/* FOOTER */
-.footer {
-  background-color: #C2DFE3;
   text-align: center;
-  font-size: 1.2rem;
-  padding: 4rem; }
-  .footer p.slogan {
-    color: #000;
-    font-size: 1.8rem;
-    margin: 0 0 1rem; }
-  .footer p.copywrite {
-    color: #8f9296;
-    font-size: 0.875rem;
-    margin: 0; }
-  .footer .links a {
-    font-weight: bold;
-    color: #000;
-    padding: 0 0.5rem 0 0.5rem; }
-    .footer .links a::after {
-      padding: 0 0.4rem 0 0.4rem; }
-    .footer .links a:last-child::after {
-      padding: 0 0.4rem 0 0.4rem; }
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.paragraph-number {
+  letter-spacing: 2px;
+}
